@@ -640,7 +640,7 @@
             NSDictionary *dict = [_response objectForKey:@"ItemsList"];
             if ([[dict objectForKey:@"errFlag"]intValue]==0 && [[dict objectForKey:@"errNum"]intValue]==61)
             {
-                UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Message" message:@"You are about to delete all your account details incliuding matches and chat too. Are you sure?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+                UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Message" message:@"You are about to delete all your account details including matches and chat too. Are you sure?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
                 alert.tag =102;
                 [alert show];
             }

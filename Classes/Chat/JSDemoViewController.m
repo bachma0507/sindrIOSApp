@@ -352,7 +352,7 @@
 {
     MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
     controller.mailComposeDelegate = self;
-    [controller setSubject:@"Sindr App: Report User"];
+    [controller setSubject:@"MeLikeeU App: Report User"];
     [controller setMessageBody:@"" isHTML:NO];
     NSMutableArray *emails = [[NSMutableArray alloc] initWithObjects:@"sindrapp@gmail.com", nil];
     [controller setToRecipients:[NSArray arrayWithArray:(NSArray *)emails]];

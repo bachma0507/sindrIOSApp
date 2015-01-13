@@ -779,7 +779,7 @@
 
 - (void)openMail
 {
-    [super sendMailSubject:@"Sindr App" toRecipents:[NSArray arrayWithObject:@"sindrapp@gmail.com"] withMessage:@""];
+    [super sendMailSubject:@"MeLikeeU App" toRecipents:[NSArray arrayWithObject:@"sindrapp@gmail.com"] withMessage:@""];
 }
 
 #pragma mark -

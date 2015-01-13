@@ -260,7 +260,7 @@ NSString *const FBSessionStateChangedNotification =
 
 -(void)customizeNavigationBar
 {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigation_bar.png"]
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigation_bar2.png"]
                                        forBarMetrics:UIBarMetricsDefault];
     
     [[UINavigationBar appearance] setTitleTextAttributes:

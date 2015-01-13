@@ -106,7 +106,7 @@
 
     self.navigationController.navigationBarHidden = NO;
     [APPDELEGATE addBackButton:self.navigationItem];
-    [self.navigationItem setTitle:@"sindr"];
+    [self.navigationItem setTitle:@"MeLikeeU"];
     [APPDELEGATE addrightButton:self.navigationItem];
     
     [self.revealSideViewController setDirectionsToShowBounce: PPRevealSideDirectionLeft | PPRevealSideDirectionRight ];
@@ -775,7 +775,7 @@
 
 -(IBAction)openMail :(id)sender
 {
-    [super sendMailSubject:@"Flamer App!" toRecipents:[NSArray arrayWithObject:@""] withMessage:@"I am using Flamer App ! Whay don't you try it out…<br/>Install Flamer now !<br/><b>Google Play :-</b> <a href='https://play.google.com/store/apps/details?id=com.appdupe.flamernofb'>https://play.google.com/store/apps/details?id=com.appdupe.flamernofb</a><br/><b>iTunes :-</b>"];
+    [super sendMailSubject:@"MeLikeeU App!" toRecipents:[NSArray arrayWithObject:@""] withMessage:@"I am using MeLikeeU for the iPhone and Android. Why don't you try it out…<br/>Install MeLikeeU now from <br/><b>The App Store :-</b> <a href='https://itunes.apple.com/us/app/melikeeu/id957141902'>https://itunes.apple.com/us/app/melikeeu/id957141902</a><br/><b>Google Play :-</b><a href='https://play.google.com/store/apps/details?id=com.speedyreference.melikeeu'>https://play.google.com/store/apps/details?id=com.speedyreference.melikeeu</a>"];
 }
 
 #pragma mark -

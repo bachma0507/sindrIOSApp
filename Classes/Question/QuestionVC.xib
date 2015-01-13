@@ -25,7 +25,7 @@
                         <outlet property="delegate" destination="-1" id="dck-4i-gAu"/>
                     </connections>
                 </scrollView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation_bar.png" id="8S5-d0-EMt">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation_bar2.png" id="8S5-d0-EMt">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -79,7 +79,7 @@
         </view>
     </objects>
     <resources>
-        <image name="navigation_bar.png" width="320" height="44"/>
+        <image name="navigation_bar2.png" width="320" height="44"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

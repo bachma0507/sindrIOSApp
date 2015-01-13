@@ -117,10 +117,10 @@
                                 <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sz4-Ru-6Zs">
                                     <rect key="frame" x="46" y="31" width="30" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" backgroundImage="cross_icon_off.png">
+                                    <state key="normal" backgroundImage="not_like_icon_off.png">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
-                                    <state key="highlighted" backgroundImage="cross_icon_on.png"/>
+                                    <state key="highlighted" backgroundImage="not_like_icon_on.png"/>
                                     <connections>
                                         <action selector="likeDislikeButtonAction:" destination="-1" eventType="touchUpInside" id="hha-s2-1eu"/>
                                     </connections>
@@ -139,10 +139,10 @@
                                 <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XG2-9Z-eKz">
                                     <rect key="frame" x="201" y="32" width="35" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" backgroundImage="heart_icon_off.png">
+                                    <state key="normal" backgroundImage="like_icon_off.png">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
-                                    <state key="highlighted" backgroundImage="heart_icon_on.png"/>
+                                    <state key="highlighted" backgroundImage="like_icon_on.png"/>
                                     <connections>
                                         <action selector="likeDislikeButtonAction:" destination="-1" eventType="touchUpInside" id="pWd-Pr-5cP"/>
                                     </connections>
@@ -158,7 +158,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="278"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_tab.png" id="Q10-Nb-D9H">
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_tab2.png" id="Q10-Nb-D9H">
                                     <rect key="frame" x="0.0" y="277" width="280" height="48"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </imageView>
@@ -223,7 +223,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="278"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
-                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="icon_tab.png" id="pnR-dC-6Id">
+                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="icon_tab2.png" id="pnR-dC-6Id">
                                     <rect key="frame" x="0.0" y="277" width="280" height="48"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </imageView>
@@ -369,17 +369,17 @@
         <image name="bg_tab_wit_viewmore_txt.png" width="224" height="42"/>
         <image name="book_icon_off.png" width="30" height="30"/>
         <image name="camera_icon.png" width="19" height="15"/>
-        <image name="cross_icon_off.png" width="30" height="30"/>
-        <image name="cross_icon_on.png" width="30" height="30"/>
         <image name="heart_icon_bg.png" width="95" height="95"/>
-        <image name="heart_icon_off.png" width="35" height="35"/>
-        <image name="heart_icon_on.png" width="35" height="35"/>
-        <image name="icon_tab.png" width="287" height="48"/>
+        <image name="icon_tab2.png" width="287" height="48"/>
         <image name="info_icon_bg.png" width="62" height="62"/>
         <image name="info_icon_off.png" width="25" height="25"/>
         <image name="info_icon_on.png" width="25" height="25"/>
         <image name="invite_btn.png" width="228" height="54"/>
+        <image name="like_icon_off.png" width="35" height="35"/>
+        <image name="like_icon_on.png" width="35" height="35"/>
         <image name="match_txt.png" width="245" height="35"/>
+        <image name="not_like_icon_off.png" width="35" height="35"/>
+        <image name="not_like_icon_on.png" width="30" height="30"/>
         <image name="user_icon.png" width="30" height="30"/>
         <image name="user_name_bg.png" width="287" height="23"/>
     </resources>

@@ -331,7 +331,7 @@
     if(rows > 0) {
         [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:rows - 1 inSection:0]
                               atScrollPosition:UITableViewScrollPositionBottom
-                                      animated:animated];
+                                      animated:YES];
     }
 }
 

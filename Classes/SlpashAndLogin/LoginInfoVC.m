@@ -57,7 +57,7 @@
     
     UILabel * lblLine1 = [[UILabel alloc]initWithFrame:CGRectMake(55, lblHead.frame.origin.y+lblHead.frame.size.height+15,265,36)];
     lblLine1.numberOfLines = 3;
-    [Helper setToLabel:lblLine1 Text:@"We will naver post anything to Facebook" WithFont:SEGOUE_UI FSize:13 Color:[Helper getColorFromHexString:@"#4c4c4c" :1]];
+    [Helper setToLabel:lblLine1 Text:@"We will never post anything to Facebook" WithFont:SEGOUE_UI FSize:13 Color:[Helper getColorFromHexString:@"#4c4c4c" :1]];
     [self.view addSubview:lblLine1];
     
     UILabel * lblLine2 = [[UILabel alloc]initWithFrame:CGRectMake(55, lblLine1.frame.origin.y+lblLine1.frame.size.height+15,265,36)];
@@ -67,7 +67,7 @@
     
     UILabel * lblLine3 = [[UILabel alloc]initWithFrame:CGRectMake(55, lblLine2.frame.origin.y+lblLine2.frame.size.height+15,265,36)];
     lblLine3.numberOfLines = 3;
-    [Helper setToLabel:lblLine3 Text:@"Other user cannot contact you unless you've already been matched" WithFont:SEGOUE_UI FSize:13 Color:[Helper getColorFromHexString:@"#4c4c4c" :1]];
+    [Helper setToLabel:lblLine3 Text:@"Other users cannot contact you unless you've already been matched" WithFont:SEGOUE_UI FSize:13 Color:[Helper getColorFromHexString:@"#4c4c4c" :1]];
     [self.view addSubview:lblLine3];
     
     UILabel * lblLine4 = [[UILabel alloc]initWithFrame:CGRectMake(55, lblLine3.frame.origin.y+lblLine3.frame.size.height+15,265,36)];

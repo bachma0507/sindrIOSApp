@@ -97,7 +97,7 @@
 {
     [[UIApplication sharedApplication]setStatusBarHidden:YES];
     [self.navigationItem setTitle:ChatPersonNane];
-/*
+
     buttonUserPic = [UIButton buttonWithType:UIButtonTypeCustom];
     buttonUserPic.frame= CGRectMake(110, 2, 43,43);
     UIImage *matchedPersonImageOnNavigationBar=[JSAvatarImageFactory avatarImageNamed:self.matchedUserProfileImagePath style:JSAvatarImageStyleFlat shape:JSAvatarImageShapeCircle];
@@ -105,14 +105,14 @@
     [buttonUserPic addTarget:self action:@selector(buttonUserProfileTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController.view addSubview:buttonUserPic];
     
-    buttonUserTitle = [UIButton buttonWithType:UIButtonTypeCustom];
-    buttonUserTitle.frame= CGRectMake(buttonUserPic.frame.origin.x+buttonUserPic.frame.size.width-16, 9, 100,30);
-    [buttonUserTitle setTintColor:[UIColor whiteColor]];
-    [buttonUserTitle setTitle:ChatPersonNane forState:UIControlStateNormal];
-    [buttonUserTitle addTarget:self action:@selector(buttonUserProfileTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.navigationController.view addSubview:buttonUserTitle];
+//    buttonUserTitle = [UIButton buttonWithType:UIButtonTypeCustom];
+//    buttonUserTitle.frame= CGRectMake(buttonUserPic.frame.origin.x+buttonUserPic.frame.size.width-16, 9, 100,30);
+//    [buttonUserTitle setTintColor:[UIColor whiteColor]];
+//    [buttonUserTitle setTitle:ChatPersonNane forState:UIControlStateNormal];
+//    [buttonUserTitle addTarget:self action:@selector(buttonUserProfileTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.navigationController.view addSubview:buttonUserTitle];
     
-    */
+    
     
    [self performSelector:@selector(messageTableReload) withObject:nil afterDelay:10];
 }

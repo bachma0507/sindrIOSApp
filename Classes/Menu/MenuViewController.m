@@ -197,10 +197,10 @@
 {
     if (actSheet.tag == 200) {
         if(buttonIndex == 0){
-            [super sendMailSubject:@"MeLikeeU App!" toRecipents:[NSArray arrayWithObject:@""] withMessage:@"I am using MeLikeeU for the iPhone and Android. Why don't you try it out…<br/>Install MeLikeeU now from <br/><b>The App Store :-</b> <a href='https://itunes.apple.com/us/app/melikeeu/id957141902'>https://itunes.apple.com/us/app/melikeeu/id957141902</a><br/><b>Google Play :-</b><a href='https://play.google.com/store/apps/details?id=com.speedyreference.melikeeu'>https://play.google.com/store/apps/details?id=com.speedyreference.melikeeu</a>"];
+            [super sendMailSubject:@"MeLikeeU App!" toRecipents:[NSArray arrayWithObject:@""] withMessage:@"I am using MeLikeeU for the iPhone. Why don't you try it out…<br/>Install MeLikeeU now from <br/><b>The App Store :-</b> <a href='https://itunes.apple.com/us/app/melikeeu/id957141902'>https://itunes.apple.com/us/app/melikeeu/id957141902</a>"];
         }
         else if(buttonIndex == 1){
-            [super sendMessage:@"I am using MeLikeeU for the iPhone and Android! Why don't you try it out…\nInstall MeLikeeU now !\nFrom the App Store :- https://itunes.apple.com/us/app/melikeeu/id957141902\nFrom Google Play: - https://play.google.com/store/apps/details?id=com.speedyreference.melikeeu"];
+            [super sendMessage:@"I am using MeLikeeU for the iPhone! Why don't you try it out…\nInstall MeLikeeU now !\nFrom the App Store :- https://itunes.apple.com/us/app/melikeeu/id957141902"];
         }
     }
 }

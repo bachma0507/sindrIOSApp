@@ -34,7 +34,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.imgSplash.image= [UIImage imageNamed:@"Default.png"];
+    self.imgSplash.image= [UIImage imageNamed:@"Default"];
 }
 
 -(void)viewWillAppear:(BOOL)animated

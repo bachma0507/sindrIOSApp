@@ -378,8 +378,8 @@
         <image name="like_icon_off.png" width="35" height="35"/>
         <image name="like_icon_on.png" width="35" height="35"/>
         <image name="match_txt.png" width="245" height="35"/>
-        <image name="not_like_icon_off.png" width="35" height="35"/>
-        <image name="not_like_icon_on.png" width="30" height="30"/>
+        <image name="not_like_icon_off.png" width="31" height="31"/>
+        <image name="not_like_icon_on.png" width="31" height="31"/>
         <image name="user_icon.png" width="30" height="30"/>
         <image name="user_name_bg.png" width="287" height="23"/>
     </resources>

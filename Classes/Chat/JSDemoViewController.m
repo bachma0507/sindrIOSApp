@@ -606,11 +606,11 @@
     
     if ([senderId isEqualToString:self.userFbId])
     {
-        return [JSBubbleImageViewFactory bubbleImageViewForType:type color:[UIColor js_iOS7lightGrayColor]];
+        return [JSBubbleImageViewFactory bubbleImageViewForType:type color:[UIColor js_iOS7blueColor]];
     }
     else
     {
-        return [JSBubbleImageViewFactory bubbleImageViewForType:type color:[UIColor js_iOS7blueColor]];
+        return [JSBubbleImageViewFactory bubbleImageViewForType:type color:[UIColor js_iOS7lightGrayColor]];
     }
 }
 

@@ -24,11 +24,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" id="abB-2M-LpT" userLabel="viewInfo">
-                    <rect key="frame" x="0.0" y="399" width="320" height="420"/>
+                    <rect key="frame" x="0.0" y="337" width="320" height="140"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4sX-31-5h9">
+                            <rect key="frame" x="132" y="30" width="57" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Login">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WTU-AY-6LP">
+                            <rect key="frame" x="124" y="1" width="76" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Sign Up">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickbtnSignup:" destination="-1" eventType="touchUpInside" id="dX0-i9-iFX"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Zk-q9-qR4" userLabel="btnInfo">
-                            <rect key="frame" x="12" y="47" width="296" height="33"/>
+                            <rect key="frame" x="12" y="106" width="296" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -41,7 +58,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8wS-dw-j5g" userLabel="btnFBLogin">
-                            <rect key="frame" x="19" y="8" width="282" height="44"/>
+                            <rect key="frame" x="19" y="66" width="282" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" backgroundImage="fb_btn_txt.png">
@@ -55,7 +72,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="uXO-yg-b1X" userLabel="scrImages">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="376"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="316"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
@@ -63,7 +80,7 @@
                     </connections>
                 </scrollView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="aKH-jv-k6p">
-                    <rect key="frame" x="0.0" y="369" width="320" height="37"/>
+                    <rect key="frame" x="0.0" y="305" width="320" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
@@ -71,7 +88,7 @@
                     </connections>
                 </pageControl>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="shadow.png" id="t3q-LD-8HK" userLabel="imgShadow">
-                    <rect key="frame" x="0.0" y="365" width="320" height="11"/>
+                    <rect key="frame" x="0.0" y="305" width="320" height="11"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </imageView>
                 <view hidden="YES" contentMode="scaleToFill" id="Up8-PK-PSe" userLabel="viewDatePic">

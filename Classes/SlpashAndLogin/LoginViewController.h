@@ -29,6 +29,7 @@
 -(IBAction)changePage:(id)sender;
 -(IBAction)onClickbtnInfo:(id)sender;
 -(IBAction)onClickbtnFBLogin:(id)sender;
+- (IBAction)onClickbtnSignup:(id)sender;
 
 -(IBAction)onClickDone:(id)sender;
 

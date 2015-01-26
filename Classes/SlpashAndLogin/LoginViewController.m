@@ -13,6 +13,7 @@
 #import "Service.h"
 #import "LocationHelper.h"
 #import "LoginInfoVC.h"
+#import "SignupViewController.h"
 
 @interface LoginViewController ()
 
@@ -161,6 +162,16 @@
     {
         self.viewDatePic.hidden=NO;
     }
+}
+
+- (IBAction)onClickbtnSignup:(id)sender {
+    
+    SignupViewController *vc=[[SignupViewController alloc]initWithNibName:@"SignupViewController" bundle:nil];
+    vc.parent=self;
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+    
 }
 
 -(IBAction)onClickDone:(id)sender

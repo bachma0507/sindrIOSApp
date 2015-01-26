@@ -242,6 +242,8 @@
 		4C721F4B1A689D8500DABD09 /* chat_signup_screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C721F491A689D8500DABD09 /* chat_signup_screen@2x.png */; };
 		4C721F4C1A689D8500DABD09 /* background_screen_two_vt_screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C721F4A1A689D8500DABD09 /* background_screen_two_vt_screen@2x.png */; };
 		4C721F4E1A68CE5500DABD09 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C721F4D1A68CE5500DABD09 /* Icon.png */; };
+		4C723A8F1A75D83100BBD834 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C723A8D1A75D83100BBD834 /* SignupViewController.m */; };
+		4C723A901A75D83100BBD834 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C723A8E1A75D83100BBD834 /* SignupViewController.xib */; };
 		4CEEEC681A65B2A90025A6AC /* icon_tab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEC661A65B2A90025A6AC /* icon_tab2.png */; };
 		4CEEEC691A65B2A90025A6AC /* icon_tab2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEC671A65B2A90025A6AC /* icon_tab2@2x.png */; };
 		4CEEEC6C1A65B59C0025A6AC /* navigation_bar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEEEC6A1A65B59C0025A6AC /* navigation_bar2.png */; };
@@ -770,6 +772,9 @@
 		4C721F491A689D8500DABD09 /* chat_signup_screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_signup_screen@2x.png"; sourceTree = "<group>"; };
 		4C721F4A1A689D8500DABD09 /* background_screen_two_vt_screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_screen_two_vt_screen@2x.png"; sourceTree = "<group>"; };
 		4C721F4D1A68CE5500DABD09 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4C723A8C1A75D83100BBD834 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		4C723A8D1A75D83100BBD834 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		4C723A8E1A75D83100BBD834 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		4CEEEC661A65B2A90025A6AC /* icon_tab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_tab2.png; sourceTree = "<group>"; };
 		4CEEEC671A65B2A90025A6AC /* icon_tab2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tab2@2x.png"; sourceTree = "<group>"; };
 		4CEEEC6A1A65B59C0025A6AC /* navigation_bar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation_bar2.png; sourceTree = "<group>"; };
@@ -1756,6 +1761,9 @@
 				142DF04E191BA2B7008F2E68 /* LoginInfoVC.h */,
 				142DF04F191BA2B7008F2E68 /* LoginInfoVC.m */,
 				142DF050191BA2B7008F2E68 /* LoginInfoVC.xib */,
+				4C723A8C1A75D83100BBD834 /* SignupViewController.h */,
+				4C723A8D1A75D83100BBD834 /* SignupViewController.m */,
+				4C723A8E1A75D83100BBD834 /* SignupViewController.xib */,
 			);
 			path = SlpashAndLogin;
 			sourceTree = "<group>";
@@ -2346,6 +2354,7 @@
 				C221293A184C75170008C482 /* background_screen.png in Resources */,
 				C2112E5A1849BEEC002F3483 /* settings_icon_off.png in Resources */,
 				14F5D0D018F6B1E400931AEE /* button-photo.png in Resources */,
+				4C723A901A75D83100BBD834 /* SignupViewController.xib in Resources */,
 				14F5D0D318F6B1E400931AEE /* input-bar-flat@2x.png in Resources */,
 				14F5D0C418F6B1E400931AEE /* bubble-tailless.png in Resources */,
 				1448C80C193C4FB6008B759E /* question_icon_off.png in Resources */,
@@ -2440,6 +2449,7 @@
 				1434F5CD190A7FFE00D471BA /* Speak.m in Sources */,
 				14F5D09218F6B1E400931AEE /* SDImageCache.m in Sources */,
 				14F5D0A618F6B1E400931AEE /* JSMessageInputView.m in Sources */,
+				4C723A8F1A75D83100BBD834 /* SignupViewController.m in Sources */,
 				14F5CFD618F6B0FA00931AEE /* GKImageCropOverlayView.m in Sources */,
 				14F5D0A018F6B1E400931AEE /* UIImage+JSMessagesView.m in Sources */,
 				14F5D09418F6B1E400931AEE /* SDWebImageDecoder.m in Sources */,

@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *fnameTxtfield;
 @property (strong, nonatomic) IBOutlet UITextField *lnameTxtfield;
 @property (strong, nonatomic) IBOutlet UITextField *unameTxtfield;
+
 @property (strong, nonatomic) IBOutlet UITextField *passwordTxtField;
 
 

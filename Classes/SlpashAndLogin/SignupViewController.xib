@@ -49,7 +49,7 @@
                     </connections>
                 </button>
                 <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-76-Mm8" userLabel="viewDatePic">
-                    <rect key="frame" x="0.0" y="220" width="320" height="260"/>
+                    <rect key="frame" x="0.0" y="290" width="320" height="187"/>
                     <subviews>
                         <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdG-9q-WEa">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

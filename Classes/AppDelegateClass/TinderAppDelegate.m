@@ -9,6 +9,9 @@
 #import "TinderAppDelegate.h"
 
 #import "SplashVC.h"
+#import <Parse/Parse.h>
+
+
 
 #import "ChatViewController.h"
 #import "JSDemoViewController.h"
@@ -33,6 +36,10 @@ NSString *const FBSessionStateChangedNotification =
 //     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
 //    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
 //     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    
+    [Parse setApplicationId:@"jQ3byyG3hHQLljPr4xCFT6BddBZPqX6iDHIaQAGe"
+                  clientKey:@"w5ZJdRFF1aEAI4jUDji1SpHJsmselV7VF8rYnPyC"];
+    
  
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     

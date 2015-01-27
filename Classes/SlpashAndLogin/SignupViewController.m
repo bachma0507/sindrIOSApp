@@ -7,6 +7,7 @@
 //
 
 #import "SignupViewController.h"
+#import  <Parse/Parse.h>
 
 @interface SignupViewController ()
 {

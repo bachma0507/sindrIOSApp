@@ -26,6 +26,7 @@
     IBOutlet UILabel *lblItsMatchedSubText;
     IBOutlet UILabel *lblNoFriendAround;
 }
+@property(nonatomic,strong)id parent;
 @property(strong ,nonatomic) NSDictionary *dictLoginUsrdetail;
 @property(strong ,nonatomic) NSMutableArray *arrFBImageUrl;
 @property(strong ,nonatomic)  NSString * strProfileUrl;

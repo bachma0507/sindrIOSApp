@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeViewController.h"
 
 @interface SignupViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -19,10 +20,14 @@
 @property (strong, nonatomic) IBOutlet UITextField *unameTxtfield;
 
 @property (strong, nonatomic) IBOutlet UITextField *passwordTxtField;
+@property (strong, nonatomic) IBOutlet UILabel *genderLabel;
+@property (strong, nonatomic) IBOutlet UIView *picView;
 
 
 
+- (IBAction)onClickGenderBtn:(id)sender;
 
+- (IBAction)onClickGenderDone:(id)sender;
 
 - (IBAction)onClickBtnClose:(id)sender;
 - (IBAction)onClickDone:(id)sender;

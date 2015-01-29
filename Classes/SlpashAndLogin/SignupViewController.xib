@@ -8,9 +8,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController">
             <connections>
                 <outlet property="fnameTxtfield" destination="X6b-KX-iS0" id="ihr-Wb-D9c"/>
+                <outlet property="genderLabel" destination="bIV-CG-EDl" id="UmI-Xb-CjV"/>
                 <outlet property="lnameTxtfield" destination="0En-90-sCv" id="SYh-0u-Ipm"/>
                 <outlet property="passwordTxtField" destination="bY3-0m-Y3C" id="wEP-ai-O6Y"/>
                 <outlet property="picDate" destination="3W4-q4-3WK" id="UV9-Q3-H0E"/>
+                <outlet property="picView" destination="8LV-kR-Yvs" id="k18-XH-KBm"/>
                 <outlet property="picker" destination="v79-z4-VYU" id="xCB-6q-apr"/>
                 <outlet property="unameTxtfield" destination="1gY-Nv-HNm" id="GYG-kA-H2C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -33,7 +35,7 @@
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TW4-tO-5GN">
-                    <rect key="frame" x="122" y="294" width="77" height="30"/>
+                    <rect key="frame" x="122" y="308" width="77" height="30"/>
                     <state key="normal" title="Sign Up">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -97,20 +99,45 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8LV-kR-Yvs">
-                    <rect key="frame" x="80" y="210" width="160" height="76"/>
+                    <rect key="frame" x="3" y="229" width="314" height="118"/>
                     <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwt-xk-ODM">
+                            <rect key="frame" x="3" y="-7" width="308" height="44"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="hXv-c4-8fm"/>
+                                <barButtonItem title="Choose" id="y6N-rf-xsL">
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="3AL-wt-oxj"/>
+                                <barButtonItem title="Done" id="PJ9-pY-BSY">
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="onClickGenderDone:" destination="-1" id="2Tn-id-E7f"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v79-z4-VYU">
-                            <rect key="frame" x="-80" y="-47" width="320" height="162"/>
+                            <rect key="frame" x="6" y="-4" width="284" height="148"/>
                         </pickerView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-3B-icA" userLabel="Gender">
-                    <rect key="frame" x="128" y="194" width="65" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIV-CG-EDl">
+                    <rect key="frame" x="111" y="198" width="129" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgn-aO-g6T">
+                    <rect key="frame" x="38" y="194" width="65" height="30"/>
+                    <state key="normal" title="Gender:">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickGenderBtn:" destination="-1" eventType="touchUpInside" id="SNV-n1-9ai"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>

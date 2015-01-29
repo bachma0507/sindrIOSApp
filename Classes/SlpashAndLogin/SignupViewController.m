@@ -8,6 +8,7 @@
 
 #import "SignupViewController.h"
 #import  <Parse/Parse.h>
+#import "AppConstant.h"
 
 @interface SignupViewController ()
 {
@@ -29,6 +30,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     // Initialize Data
+    self.navigationController.navigationBarHidden = YES;
+    
+    self.picView.hidden = YES;
+    
     _pickerData = @[@"Male", @"Female"];
     
     // Connect data
@@ -77,6 +82,16 @@
 }
 */
 
+- (IBAction)onClickGenderBtn:(id)sender {
+    
+    self.picView.hidden = NO;
+}
+
+- (IBAction)onClickGenderDone:(id)sender {
+    
+    self.picView.hidden = YES;
+}
+
 - (IBAction)onClickBtnClose:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:^{
@@ -113,12 +128,84 @@
             [alert dismissWithClickedButtonIndex:0 animated:YES];
         });
     }
+    else{
+        
+        PFUser *user = [PFUser user];
+        user.username = self.unameTxtfield.text;
+        user.password = self.passwordTxtField.text;
+        //user.email = self.emailRegisterTextField.text;
+        //user[PF_USER_EMAILCOPY] = self.emailRegisterTextField.text;
+        user[PF_USER_FIRSTNAME] = self.fnameTxtfield.text;
+        user[PF_USER_LASTNAME] = self.lnameTxtfield.text;
+        user[PF_USER_SEX] = self.genderLabel.text;
+        
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                
+//                [self dismissViewControllerAnimated:YES completion:^{
+//                    if ([_parent isKindOfClass:[HomeViewController class]]) {
+//                        HomeViewController *vc=(HomeViewController *)_parent;
+//                        //[vc onClickbtnFBLogin:nil];
+//                    }
+//                }];
+                
+//                HomeViewController *vc=[[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+//                vc.parent=self;
+//                [self presentViewController:vc animated:YES completion:^{
+//                    
+//                }];
+                //The registration was succesful, go to the wall
+                //[self performSegueWithIdentifier:@"SignupSuccesful" sender:self];
+                PFUser *currentUser = [PFUser currentUser];
+                //[[User currentUser]setUser];
+                if (currentUser){
+                HomeViewController *home ;
+                home._loadViewOnce = YES;
+                if (IS_IPHONE_5)
+                {
+                    home = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+                }
+                else
+                {
+                    home = [[HomeViewController alloc] initWithNibName:@"HomeViewController_ip4" bundle:nil];
+                }
+                home.didUserLoggedIn = YES;
+                home._loadViewOnce = YES;
+                NSMutableArray *navigationarray = [[NSMutableArray alloc]initWithArray:self.navigationController.viewControllers];
+                [navigationarray removeAllObjects];
+                [navigationarray addObject:home];
+                [self.navigationController setViewControllers:navigationarray animated:YES];
+                }
+                
+            } else {
+                //Something bad has ocurred
+                NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [errorAlertView show];
+            }
+        }];
+        
+    }
 
 }
 
 - (IBAction)onClickSignup:(id)sender {
     
+    if ([fnameTxtfield.text  isEqual: @""] || [lnameTxtfield.text  isEqual: @""] || [unameTxtfield.text  isEqual: @""] || [passwordTxtField.text  isEqual: @""] || [_genderLabel.text  isEqual: @""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
+                                                        message:@"Please complete all fields."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    else{
+    
     self.viewDatePic.hidden=NO;
+    //self.picker.hidden = YES;
+    self.picView.hidden = YES;
+    }
 }
 
 
@@ -145,5 +232,9 @@
 {
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
+    
+    NSString *resultString = _pickerData[row];
+    
+    _genderLabel.text = resultString;
 }
 @end

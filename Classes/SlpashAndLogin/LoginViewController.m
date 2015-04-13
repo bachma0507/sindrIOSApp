@@ -13,6 +13,12 @@
 #import "Service.h"
 #import "LocationHelper.h"
 #import "LoginInfoVC.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+#import <FBSDKShareKit/FBSDKShareKit.h>
+
 
 @interface LoginViewController ()
 
@@ -42,6 +48,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+        
     self.navigationController.navigationBarHidden = YES;
     
     [self getLocation];

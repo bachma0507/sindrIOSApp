@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
@@ -26,6 +26,7 @@
                 <outlet property="nameLabel2" destination="GFm-on-Z35" id="94y-3r-clG"/>
                 <outlet property="nope" destination="Z5Q-Ws-cO4" id="odB-Pi-DNG"/>
                 <outlet property="nopeBtn" destination="XG2-9Z-eKz" id="3tA-Eh-8sy"/>
+                <outlet property="pageLikeControl" destination="gsw-Oq-sJn" id="16w-bY-iR3"/>
                 <outlet property="picsCount" destination="qho-Cm-FK8" id="0vZ-8C-Nng"/>
                 <outlet property="view" destination="1" id="3"/>
                 <outlet property="viewItsMatched" destination="fJ0-fI-OhC" id="auu-sr-DQ6"/>
@@ -91,9 +92,14 @@
                     <rect key="frame" x="0.0" y="371" width="320" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" id="gsw-Oq-sJn" customClass="FBSDKLikeControl">
+                    <rect key="frame" x="46" y="479" width="228" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <view hidden="YES" contentMode="scaleToFill" id="KXz-NV-Jdb">
                     <rect key="frame" x="0.0" y="36" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

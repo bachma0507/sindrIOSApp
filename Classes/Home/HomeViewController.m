@@ -67,6 +67,10 @@
 @end
 
 @implementation HomeViewController
+{
+    FBSDKLikeButton *_photoLikeButton;
+    
+}
 @synthesize dictLoginUsrdetail;
 @synthesize arrFBImageUrl;
 @synthesize strProfileUrl;
@@ -98,6 +102,15 @@
 {
     [super viewDidLoad];
     
+    _photoLikeButton = [[FBSDKLikeButton alloc] init];
+    _photoLikeButton.objectType = FBSDKLikeObjectTypeOpenGraph;
+
+    
+    self.pageLikeControl.likeControlAuxiliaryPosition = FBSDKLikeControlAuxiliaryPositionBottom;
+    self.pageLikeControl.likeControlHorizontalAlignment = FBSDKLikeControlHorizontalAlignmentCenter;
+    self.pageLikeControl.objectID = @"MeLikeeU";
+
+    
     [self updateLocation];
     
     self.loginView.readPermissions = @[@"user_photos"];
@@ -114,6 +127,7 @@
     
     lblNoFriendAround.hidden = NO;
     btnInvite.hidden = YES;
+    self.pageLikeControl.hidden = YES;
     [Helper setButton:btnInvite Text:@"Invite your friends!" WithFont:SEGOUE_UI FSize:14 TitleColor:[UIColor grayColor] ShadowColor:nil];
     [btnInvite.titleLabel setTextAlignment:NSTextAlignmentCenter];
     btnInvite.titleEdgeInsets = UIEdgeInsetsMake(-6, 15.0, 0.0, 0.0);
@@ -225,6 +239,7 @@
                 }else{
                     [Helper setToLabel:lblNoFriendAround Text:@"There's no one new around you." WithFont:SEGOUE_UI FSize:17 Color:[UIColor blackColor]];
                     btnInvite.hidden = NO;
+                    self.pageLikeControl.hidden = NO;
                     lblNoFriendAround = NO;
                     [waveLayer setHidden:YES];
                 }
@@ -232,12 +247,14 @@
             else{
                 [Helper setToLabel:lblNoFriendAround Text:@"There's no one new around you." WithFont:SEGOUE_UI FSize:17 Color:[UIColor blackColor]];
                 btnInvite.hidden = NO;
+                self.pageLikeControl.hidden = NO;
                 lblNoFriendAround = NO;
                 [waveLayer setHidden:YES];
             }
         }else{
             [Helper setToLabel:lblNoFriendAround Text:@"There's no one new around you." WithFont:SEGOUE_UI FSize:17 Color:[UIColor blackColor]];
             btnInvite.hidden = NO;
+            self.pageLikeControl.hidden = NO;
             lblNoFriendAround = NO;
             [waveLayer setHidden:YES];
         }
@@ -614,10 +631,12 @@
         lblNoFriendAround.hidden = NO;
         [Helper setToLabel:lblNoFriendAround Text:@"There's no one new around you." WithFont:SEGOUE_UI FSize:17 Color:[UIColor blackColor]];
         btnInvite.hidden = NO;
+        self.pageLikeControl.hidden = NO;
     }
     if (visibleView1.hidden == YES) {
         [Helper setToLabel:lblNoFriendAround Text:@"There's no one new around you." WithFont:SEGOUE_UI FSize:17 Color:[UIColor blackColor]];
         btnInvite.hidden = NO;
+        self.pageLikeControl.hidden = NO;
         lblNoFriendAround .hidden= NO;
         visibleView2.hidden = NO;
     }

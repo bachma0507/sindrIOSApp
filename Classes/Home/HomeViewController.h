@@ -13,8 +13,12 @@
 #import <FacebookSDK/FBSessionTokenCachingStrategy.h>
 #import <FacebookSDK/FacebookSDK.h>
 #import "TinderFBFQL.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 #import <FBSDKShareKit/FBSDKShareKit.h>
+
 
 
 @interface HomeViewController : BaseVC<PPRevealSideViewControllerDelegate,FBLoginViewDelegate, TinderFBFQLDelegate>

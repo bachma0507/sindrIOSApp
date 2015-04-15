@@ -167,7 +167,57 @@
     }
     else
     {
-        self.viewDatePic.hidden=NO;
+        //self.viewDatePic.hidden=NO;
+        self.viewDatePic.hidden=YES;
+        
+        NSDate *birthDate = self.picDate.date;
+        NSDate *currentDate = [NSDate date];
+        
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSUInteger unitFlags = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit; //|NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit;
+        NSDateComponents *dateComponents = [calendar components:unitFlags fromDate:birthDate toDate:currentDate options:0];
+        
+        NSInteger days = [dateComponents day];
+        NSInteger months = [dateComponents month];
+        NSInteger years = [dateComponents year];
+        
+        NSLog(@"%d Years , %d Months , %d Days", years, months, days);
+        
+        strBdate=[[UtilityClass sharedObject]DateToString:birthDate withFormate:@"yyyy-MM-dd"]; //0000-00-00
+        
+        if ([FacebookUtility sharedObject].session.state!=FBSessionStateOpen)
+        {
+            [[FacebookUtility sharedObject]getFBToken];
+        }
+        
+        if ([[FacebookUtility sharedObject]isLogin])
+        {
+            [self getFacebookUserDetails];
+        }
+        else
+        {
+            [[FacebookUtility sharedObject]loginInFacebook:^(BOOL success, NSError *error)
+             {
+                 if (success)
+                 {
+                     if ([FacebookUtility sharedObject].session.state==FBSessionStateOpen)
+                     {
+                         [self getFacebookUserDetails];
+                     }
+                 }
+                 else
+                 {
+                     UIAlertView *alertView = [[UIAlertView alloc]
+                                               initWithTitle:@"Error"
+                                               message:error.localizedDescription
+                                               delegate:nil
+                                               cancelButtonTitle:@"OK"
+                                               otherButtonTitles:nil];
+                     [alertView show];
+                 }
+             }];
+        }
+
     }
 }
 

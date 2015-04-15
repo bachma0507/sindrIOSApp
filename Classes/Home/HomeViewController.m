@@ -27,6 +27,10 @@
 #import "QuestionVC.h"
 #import "ProfileVC.h"
 
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 #import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface HomeViewController ()
@@ -111,6 +115,11 @@
     self.pageLikeControl.likeControlAuxiliaryPosition = FBSDKLikeControlAuxiliaryPositionBottom;
     self.pageLikeControl.likeControlHorizontalAlignment = FBSDKLikeControlHorizontalAlignmentCenter;
     self.pageLikeControl.objectID = @"https://www.facebook.com/pages/Melikeeu/1644504645780410?fref=ts";
+    //self.pageLikeControl.objectID = @"shareitexampleapp";
+    
+//    FBSDKLikeControl *button = [[FBSDKLikeControl alloc] init];
+//    button.objectID = @"https://www.facebook.com/pages/Melikeeu/1644504645780410?fref=ts";
+//    [self.view addSubview:button];
 
     
     [self updateLocation];

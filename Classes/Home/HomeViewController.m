@@ -27,6 +27,8 @@
 #import "QuestionVC.h"
 #import "ProfileVC.h"
 
+#import <FBSDKShareKit/FBSDKShareKit.h>
+
 @interface HomeViewController ()
 {
     BOOL inAnimation;
@@ -108,7 +110,7 @@
     
     self.pageLikeControl.likeControlAuxiliaryPosition = FBSDKLikeControlAuxiliaryPositionBottom;
     self.pageLikeControl.likeControlHorizontalAlignment = FBSDKLikeControlHorizontalAlignmentCenter;
-    self.pageLikeControl.objectID = @"MeLikeeU";
+    self.pageLikeControl.objectID = @"https://www.facebook.com/pages/Melikeeu/1644504645780410?fref=ts";
 
     
     [self updateLocation];

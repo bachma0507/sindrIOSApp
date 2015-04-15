@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>68697C1E-F7CC-4DE1-912D-3BAB1B2445EE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Tinder</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>09A9F21B36BAAD2131F6EBF5B91669DD78728403</key>
 		<string>https://github.com/bachma0507/sindrIOSApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tinder.xcodeproj</string>
+	<string>Tinder.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>09A9F21B36BAAD2131F6EBF5B91669DD78728403</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>09A9F21B36BAAD2131F6EBF5B91669DD78728403</string>
 			<key>IDESourceControlWCCName</key>
-			<string>sindrIOSApp</string>
+			<string>MeLikeeUnewicons</string>
 		</dict>
 	</array>
 </dict>
